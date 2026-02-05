@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentine 💖</title>
+  <link rel="stylesheet" href="valen.css">
+</head>
+
+<body>
+  <div class="card">
+
+    <img src="us.png" alt="Us together" class="card-photo">
+
+    <!-- QUESTION VIEW -->
+    <div id="questionView">
+      <h1 id="question">Will you be my Valentine? 💖</h1>
+
+      <p class="subtitle">
+        Forever feels long, but if you walk beside me, I’ll carry you through it
+      </p>
+
+      <div class="buttons">
+        <button class="yes" id="yesBtn" type="button">Yes 💘</button>
+        <button class="no" id="noBtn" type="button">No 😭</button>
+      </div>
+    </div>
+
+    <!-- YES VIEW (hidden at first) -->
+    <div id="yesView" class="hidden">
+      <h2 class="yay">Yayy you agreed! 💖</h2>
+      <p class="hint">Click the envelope 👇</p>
+
+      <button class="envelope-btn" id="openLetterBtn" type="button" aria-label="Open letter">
+        <span class="envelope" aria-hidden="true"></span>
+        <span class="click-this">Click this</span>
+      </button>
+    </div>
+
+    <!-- LETTER MODAL (hidden at first) -->
+    <div class="modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <div class="modal-backdrop" id="closeBackdrop"></div>
+
+      <div class="letter">
+        <button class="close" id="closeLetterBtn" type="button" aria-label="Close letter">×</button>
+
+        <h3 id="letterTitle">A little note for you 💌</h3>
+
+        <p class="letter-text">
+          Forever may feel long, but as long as you’re beside me, I’ll carry you through it all. I love you so much, baby, and you’ll always have me no matter what <3
+        </p>
+
+        <div class="letter-footer">— Your sweet boy, EJ</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="val.js"></script>
+  <audio id="bgMusic" src="love.mp3" loop autoplay muted></audio>
+</body>
+</html>
